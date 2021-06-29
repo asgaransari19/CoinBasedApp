@@ -1,8 +1,6 @@
 import React from 'react';
-import Topbar from '../../components/Topbar';
 import Layout from '../../components/Layout';
 import useStyles from '../../styles/overview';
-import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 import { Box, Grid, Table, Typography, Button } from '@material-ui/core';
 import OverviewCard from '../../components/OverviewCard';
 import TableHead from '@material-ui/core/TableHead';
@@ -10,7 +8,6 @@ import TableCell from '@material-ui/core/TableCell';
 import TableBody from '@material-ui/core/TableBody';
 import TableRow from '@material-ui/core/TableRow';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
-import CustomWallet from '../../components/CustomWallet';
 import CustomTransaction from '../../components/CustomTransaction';
 export default function Overview(props) {
 	const classes = useStyles();
@@ -112,7 +109,7 @@ export default function Overview(props) {
 				<Typography varriant="subtital" className={classes.Typography}>
 					Conversion Rate to Naira
 				</Typography>
-				<Box className={classes.label}>
+				<Box className={classes.tableSection}>
 					<Table className={classes.table}>
 						<TableHead>
 							{tableHead.map((head) => (
@@ -152,7 +149,7 @@ export default function Overview(props) {
 				</Box>
 			</Box>
 			<CustomTransaction />
-			<CustomWallet />
+			{/* <CustomWallet /> */}
 		</Layout>
 	);
 }

@@ -4,12 +4,13 @@ export default makeStyles((theme) => ({
 	root: {
 		marginLeft: 'auto',
 		marginRight: 'auto',
-		width: '1030px',
 		marginTop: '50px',
 		borderRadius: '5px',
 		position: 'relative',
 		height: '324px',
 		zIndex: 1,
+		width: '100%',
+		overflow: 'auto',
 	},
 	media: {
 		width: '100%',
@@ -55,11 +56,11 @@ export default makeStyles((theme) => ({
 		fontWeight: 'bold',
 		color: 'white',
 	},
-	grid2:{
+	grid2: {
 		marginLeft: '60px',
-		marginTop: '20px'
+		marginTop: '20px',
 	},
-	grid3:{
-		marginTop: '20px'
-	}
+	grid3: {
+		marginTop: '20px',
+	},
 }));

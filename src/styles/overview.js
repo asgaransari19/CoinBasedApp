@@ -13,6 +13,8 @@ export default makeStyles((theme) => ({
 		marginLeft: 'auto',
 		borderRadius: '5px',
 		color: theme.border.main,
+		overflow: 'auto',
+		position: 'relative',
 	},
 	Typography: {
 		marginLeft: '75px',
@@ -20,10 +22,10 @@ export default makeStyles((theme) => ({
 		fontFamily: theme.typography.poppinsBold,
 		color: theme.palette.text.primary,
 	},
-	label: {
-		display: 'flex',
-		marginLeft: '25px',
-		justifyContent: 'space-between',
+	tableSection: {
+		// display: 'flex',
+		// marginLeft: '25px',
+		// justifyContent: 'space-between',
 
 		'& .MuiTableCell-head': {
 			fontSize: '12px',
@@ -39,13 +41,18 @@ export default makeStyles((theme) => ({
 		fontSize: '10px',
 		border: 'none',
 	},
-	tableButton:{
-		color:"#FFFFFF",
-		height: '60px',
-		width: '30px',
-		borderRadius: '50%',
-		marginTop: '120px',
-		marginRight: '70px',
-		background: theme.palette.gradient.bottom,
-	}
+	tableButton: {
+		position: 'absolute',
+		top: '50%',
+		right: '20px',
+		width: 'fit-content',
+		'& .MuiSvgIcon-root': {
+			color: '#FFFFFF',
+			height: '30px',
+			width: '30px',
+			borderRadius: '50%',
+			background: theme.palette.gradient.bottom,
+			padding: '10px',
+		},
+	},
 }));

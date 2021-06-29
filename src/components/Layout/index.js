@@ -19,6 +19,8 @@ const useStyles = makeStyles((theme) => ({
 	}),
 	childrenBox: {
 		padding: '20px 60px 0 60px',
+		width: '100%',
+		overflowX: 'hidden',
 	},
 }));
 export default function Layout(props) {

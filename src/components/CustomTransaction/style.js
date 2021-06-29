@@ -1,16 +1,16 @@
-import { makeStyles } from "@material-ui/core";
+import { makeStyles } from '@material-ui/core';
 export default makeStyles((theme) => ({
-
-    root: {
-		height: '816px',
-		width: '1023px',
-        color:  theme.border.main,
+	root: {
+		height: 'auto',
+		color: theme.border.main,
 		border: '2px solid',
 		background: '#FFFFFF',
 		marginLeft: 'auto',
 		marginRight: 'auto',
 		marginTop: '40px',
 		borderRadius: '5px',
+		width: '100%',
+		overflow: 'hidden',
 		'& .MuiTableCell-head': {
 			fontSize: '12px',
 			fontFamily: theme.typography.poppinsBold,
@@ -21,10 +21,9 @@ export default makeStyles((theme) => ({
 			fontFamily: theme.typography.poppinsRegular,
 		},
 	},
-	label: {
-		display: 'flex',
-		justifyContent: 'space-around',
-		// marginLeft: '40px',
+	tableSection: {
+		width: '100%',
+		overflow: 'auto',
 		padding: '20px 55px',
 		'& .MuiTableCell-head': {
 			fontSize: '12px',
@@ -66,16 +65,13 @@ export default makeStyles((theme) => ({
 		marginLeft: 'auto',
 		marginRight: 'auto',
 	},
-	viewMorebtn:{
+	viewMorebtn: {
 		height: '42px',
 		width: '134px',
 		background: theme.palette.gradient.bottom,
 		color: theme.palette.common.white,
 		justifyContent: 'center',
 		borderRadius: '20px',
-		fontSize:'10px',
-	}
-
-
-    
+		fontSize: '10px',
+	},
 }));
